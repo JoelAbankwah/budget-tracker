@@ -11,7 +11,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/pizza-hun
   useUnifiedTopology: true
 });
 
-
 const app = express();
 
 app.use(logger("dev"));
