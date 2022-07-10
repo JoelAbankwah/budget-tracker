@@ -126,10 +126,11 @@ function sendTransaction(isAdding) {
   })
   .then(data => {
     if (data.errors) {
-      errorEl.textContent = "Missing Information";
+    errorEl.textContent = "Missing Information";
     }
     else {
       // clear form
+      alert('Transaction sumbitted!')
       nameEl.value = "";
       amountEl.value = "";
     }
